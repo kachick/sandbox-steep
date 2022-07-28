@@ -1,0 +1,2 @@
+- [issue-620](https://github.com/soutaro/steep/issues/620)
+- [issue-621](https://github.com/soutaro/steep/issues/621)

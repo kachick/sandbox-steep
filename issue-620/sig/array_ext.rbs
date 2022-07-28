@@ -1,0 +1,3 @@
+class Array[unchecked out Elem] < Object
+  def my_method: () -> ::Integer
+end
