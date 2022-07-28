@@ -1,0 +1,6 @@
+class Something
+  include Enumerable[::Integer]
+
+  # _@return_ — void
+  def each: () ?{ (Integer magic) -> void } -> untyped
+end
