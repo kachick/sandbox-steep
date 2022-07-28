@@ -12,3 +12,5 @@ class Something
 end
 
 Something.new.map { |elm| elm.abs * 42 }
+
+KeyValueStore.new.to_h { |sym, int| [sym.id2name, int.chr] }

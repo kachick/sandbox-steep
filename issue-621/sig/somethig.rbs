@@ -4,3 +4,14 @@ class Something
   # _@return_ — void
   def each: () ?{ (Integer magic) -> void } -> untyped
 end
+
+class KeyValueStore
+  # https://github.com/soutaro/steep/issues/621#issuecomment-1198161359
+  # https://github.com/ruby/rbs/blob/0f5fdaa2246606fb8dea5a18e1db19458d655300/core/hash.rbs#L558-L559
+  include Enumerable[[::Symbol, ::Integer]]
+
+  def initialize: () -> void
+
+  # _@return_ — void
+  def each: () ?{ (::Symbol, ::Integer) -> void } -> untyped
+end
